@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap') /*adicionanado a fonte que desejamos*/
+
+ *{ /*abertura do reset css, pegando todo o código em si*/
+    margin: 0; /*distancia do nosso elemento para fora */
+    padding: 0; /*distancia da tag para o conteúdo dela*/
+    box-sizing: border-box; /*faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura*/
+    text-decoration: none; /*tirar qualquer decoração que pode ter no texto*/
+} /*fechamento do reset css*/
+
+body{ /*iremos estilizar todo o conteúdo odo body*/
+    font-size: 100%; /*tamanho da fonte*/
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%) /*seria a cor de fundo, duas cores misturas*/
+} /*fechamento da estilizaçaõ*/
+
+.cabecalho{ /*temos a propriedade pai, que é o cabecalho e temos a propriedade para a tag filho,que são os elementos dentro do cabeçalho*/ 
+    display: flex; /*se iremos utilizar o flexbox, precisamos definir que iremos utilizar, e é nessa que definimos*/
+    flex-direction: row; /*aqui definimos se queremos horizontal ou vertical*/
+    align-items: center; /*como queremos que eles fiquem alinhados um ao lado do outro*/
+    justify-content: space-around; /*espaçamento entre eles*/
+    padding: 24px; /*espaço entre todos os cantos*/
+}
+
+.cabecalho-imagem{
+    height: 72px; /*altura da imagem*/
+}
+
+.cabecalho-conteudo{
+    display: flex; /*se iremos utilizar o flexbox, precisamos definir que iremos utilizar, e é nessa que definimos*/
+    gap: 32px; /*distancia entre todos os elementos*/
+}
+
+.cabecalho-conteudo-item{
+    font-family: "Sarala", sans-serif; /*nome da fonte que importamos*/
+    color: #FFF2E7; /*cor da fonte*/
+    font-weight: 400; /*mais em negrito, mas pesada a fonte*/
+    font-size: 18px; /*tamanho da fonte*/
+}
+
+.conteudo{
+    border-top: 0.4px solid #FFF2E7; /*borda do topo do conteudo*/
+    margin-bottom: 48px; /*borda do final do conteudo*/
+}
+
+.conteudo-principal{
+    display: flex; /*se iremos utilizar o flexbox, precisamos definir que iremos utilizar, e é nessa que definimos*/
+    flex-direction: row; /*aqui definimos se queremos horizontal ou vertical*/
+    align-items: center; /*como queremos que eles fiquem alinhados um ao lado do outro*/
+    justify-content: space-around; /*espaçamento entre eles*/
+}
+
+.conteudo-principal-escrito{
+    display: flex; /*se iremos utilizar o flexbox, precisamos definir que iremos utilizar, e é nessa que definimos*/
+    flex-direction: column; /*neste caso é para deixar em coluna*/
+    gap: 32px; /*distancia entre todos os elementos*/
+}
+
+.conteudo-principal-escrito-titulo{
+    font-family: "Righteous", sans-serif; /*nome da fonte que importamos*/
+    font-weight: 400; /*mais em negrito, mas pesada a fonte*/
+    font-size: 64px; /*tamanho da fonte*/
+    color: #FFF2E7; /*cor da fonte*/
+}
+
+.conteudo-principal-escrito-subitulo{
+    font-family: "Sarala", sans-serif; /*nome da fonte que importamos*/
+    font-weight: 400; /*mais em negrito, mas pesada a fonte*/
+    font-size: 24px; /*tamanho da fonte*/
+    color: #ECD6C4; /*cor da fonte*/
+}
+
+.conteudo-principal-escrito-botao {
+    background-color: #ECD6C4; /*seria a cor de fundo*/
+    width: 180px; /*largura do conteúdo*/
+    height: 60px; /*altura do conteúdo*/
+    border: none; /*queremos sem borda*/
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25); /*efeito de sombra*/
+    border-radius: 20px; /*formato arredondado*/
+    font-family: "Sarala", sans-serif; /*nome da fonte que importamos*/
+    font-weight: 400; /*mais em negrito, mas pesada a fonte*/
+    font-size: 24px; /*tamanho da fonte*/
+    color: #2F2325; /*cor da fonte*/
+}
+
+.conteudo-principal-escrito-botao :hover {
+    background-color: rgba(236, 214, 196, 0.53); /*seria a cor de fundo*/   
+}
+
+.conteudo-principal-imagem{
+    height: 430px; /*altura da imagem*/
+}
+
+.conteudo-secundario{
+    display: flex; /*se iremos utilizar o flexbox, precisamos definir que iremos utilizar, e é nessa que definimos*/
+    flex-direction: column;
+    align-items: center; /*como queremos que eles fiquem alinhados um ao lado do outro*/
+    gap: 24px; /*distancia entre todos os elementos*/
+    margin-top: 48px; /*espaço do conteúdo principal*/
+}
+
+.conteudo-secundario-titulo{
+    border-top: 0.4px solid #FFF2E7; /*seria uma coluna que separa o princial com o seundário*/
+    padding-top: 48px; /*define as dimensões do espaçamento interno superior*/
+    font-family: "Righteous", sans-serif; /*nome da fonte que importamos*/
+    font-weight: 400; /*mais em negrito, mas pesada a fonte*/
+    font-size: 24px; /*tamanho da fonte*/
+    color: #FFF2E7; /*cor da fonte*/
+    margin-bottom: 16px; /*um espaçamento maior*/
+}
+
+.conteudo-secundario-paragrafo{
+    font-family: "Sarala", sans-serif; /*nome da fonte que importamos*/
+    font-weight: 400; /*mais em negrito, mas pesada a fonte*/
+    font-size: 18px; /*tamanho da fonte*/
+    color: #ECD6C4; /*cor da fonte*/
+}
+
+.rodape{
+    padding: 32px; /*distancia da tag para o conteúdo dela*/
+    border-top: 0.4px solid #FFF2E7;
+}
+
+.rodape-imagem{
+    height: 48px; /*altura da imagem*/
+    display: block; /*centralizar algo especifico*/
+    margin: 0 auto; /*distancia do nosso elemento para fora */
+}
